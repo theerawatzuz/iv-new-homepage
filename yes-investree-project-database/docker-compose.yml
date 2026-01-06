@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # Database
   db:
-    image: mysql:8.0
+    image: mysql:5.7
     container_name: investree_mysql
     platform: linux/amd64
     restart: unless-stopped

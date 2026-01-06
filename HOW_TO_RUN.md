@@ -34,6 +34,12 @@ docker compose up -d
 ```
 Wait until Strapi is ready at http://localhost:1337
 
+## Step 3.5: Seed Database (Optional)
+```bash
+docker exec -it investree_backend npm run seed:example
+```
+This will import example data (categories, authors, articles) into Strapi. Only runs once - if you need to re-seed, clear the database first.
+
 ## Step 4: Start Frontend (Next.js)
 ```bash
 cd yes-investree-project
