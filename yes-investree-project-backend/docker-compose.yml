@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  # Backend (Strapi)
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: investree_backend
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=1337
+      - PUBLIC_URL=http://localhost:1337
+      - STRAPI_ADMIN_BACKEND_URL=http://localhost:1337
+    ports:
+      - "1337:1337"
+    volumes:
+      - strapi_uploads:/opt/app/public/uploads
+      - strapi_data:/opt/app/.tmp
+    networks:
+      - develop_network
+    external_links:
+      - investree_mysql:db
+
+volumes:
+  strapi_uploads:
+    driver: local
+  strapi_data:
+    driver: local
+
+networks:
+  develop_network:
+    external: true

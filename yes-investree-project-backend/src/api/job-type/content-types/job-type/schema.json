@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_types",
+  "info": {
+    "singularName": "job-type",
+    "pluralName": "job-types",
+    "displayName": "job-type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

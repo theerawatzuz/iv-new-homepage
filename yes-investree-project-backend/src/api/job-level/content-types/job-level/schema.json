@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_levels",
+  "info": {
+    "singularName": "job-level",
+    "pluralName": "job-levels",
+    "displayName": "job-level"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

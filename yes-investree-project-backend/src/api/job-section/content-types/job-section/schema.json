@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_sections",
+  "info": {
+    "singularName": "job-section",
+    "pluralName": "job-sections",
+    "displayName": "job-section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
