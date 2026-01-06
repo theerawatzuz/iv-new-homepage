@@ -23,24 +23,6 @@ services:
       timeout: 20s
       retries: 10
 
-  # PHPMyAdmin (optional, for database management)
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    container_name: investree_phpmyadmin
-    platform: linux/amd64
-    environment:
-      PMA_HOST: db
-      PMA_PORT: 3306
-      PMA_USER: root
-      PMA_PASSWORD: root
-    ports:
-      - "8080:80"
-    depends_on:
-      db:
-        condition: service_healthy
-    networks:
-      - develop_network
-
 volumes:
   mysql_data:
     driver: local
