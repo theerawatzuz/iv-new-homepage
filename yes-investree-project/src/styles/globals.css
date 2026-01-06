@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: NotoSansThai;
+  font-style: bold;
+  font-weight: 700;
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-Bold.ttf");
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-Bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: NotoSansThai;
+  font-style: bold;
+  font-weight: 600;
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-SemiBold.ttf");
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-SemiBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: NotoSansThai;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-Medium.ttf");
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: NotoSansThai;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-Regular.ttf");
+  src: url("../../public/fonts/Noto_Sans_Thai/NotoSansThai-Regular.ttf")
+    format("truetype");
+}
+
+:root {
+  --background: #f9f9f9;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+html,
+body {
+  font-family: NotoSansThai;
+  background-color: var(--background);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+  opacity: 0 !important;
+}
+
+.slick-track {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* ################################################################# */
+/* ##################### CSS Update 2025-03-12 ##################### */
+/* ################################################################# */
+
+/* ##################### MOBILE ##################### */
+@media (max-width: 430px) {
+  .slide-custom .slick-dots {
+    display: flex !important;
+    justify-content: left !important;
+  }
+
+  .brand-slide .slick-dots {
+    bottom: 0px !important;
+  }
+
+  .home-slide .slick-slider {
+    position: relative;
+    padding-bottom: 20px; /* Add space for the arrows at bottom */
+  }
+
+  .home-slide .slick-arrow.slick-prev,
+  .home-slide .slick-arrow.slick-next {
+    top: auto !important;
+    bottom: 0 !important;
+    transform: translateY(0) !important;
+  }
+
+  .home-slide .slick-arrow.slick-prev {
+    left: 40% !important;
+  }
+
+  .home-slide .slick-arrow.slick-next {
+    right: 40% !important;
+  }
+
+  .crowd-carousel .react-multi-carousel-list {
+    position: relative;
+    padding-bottom: 80px;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left,
+  .crowd-carousel .react-multiple-carousel__arrow--right {
+    top: auto !important;
+    bottom: 0 !important;
+    transform: translateY(0) !important;
+    background-color: transparent;
+    border: 1px solid #9a9a9a;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left {
+    left: 37% !important;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--right {
+    right: 37% !important;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left::before,
+  .crowd-carousel .react-multiple-carousel__arrow--right::before {
+    color: #9a9a9a;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left:hover::before,
+  .crowd-carousel .react-multiple-carousel__arrow--right:hover::before {
+    color: #8cc640;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left:hover,
+  .crowd-carousel .react-multiple-carousel__arrow--right:hover {
+    background-color: transparent;
+    border: 1px solid #8cc640;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .react-multiple-carousel__arrow {
+    z-index: 1 !important;
+  }
+}
+
+/* ##################### TABLET ##################### */
+@media (max-width: 1024px) {
+  .crowd-carousel .react-multi-carousel-list {
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left,
+  .crowd-carousel .react-multiple-carousel__arrow--right {
+    top: auto !important;
+    bottom: 0 !important;
+    transform: translateY(0) !important;
+    background-color: transparent;
+    border: 1px solid #9a9a9a;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left {
+    left: 37% !important;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--right {
+    right: 37% !important;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left::before,
+  .crowd-carousel .react-multiple-carousel__arrow--right::before {
+    color: #9a9a9a;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left:hover::before,
+  .crowd-carousel .react-multiple-carousel__arrow--right:hover::before {
+    color: #8cc640;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow--left:hover,
+  .crowd-carousel .react-multiple-carousel__arrow--right:hover {
+    background-color: transparent;
+    border: 1px solid #8cc640;
+  }
+
+  .crowd-carousel .react-multiple-carousel__arrow {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .react-multiple-carousel__arrow {
+    z-index: 1 !important;
+  }
+  .slide-custom .slick-dots {
+    display: flex !important;
+    justify-content: left !important;
+  }
+}
+
+/* ##################### LAPTOP ##################### */
+/* SLICK */
+.slick-dots li {
+  width: 4px !important;
+  height: 4px !important;
+  margin: 2px !important;
+}
+
+.slick-dots li.slick-active {
+  width: 24px !important;
+  height: 4px !important;
+  background-color: #8cc640 !important;
+  border-radius: 50px !important;
+}
+
+.slick-dots li.slick-active div {
+  display: none !important;
+}
+
+.slick-dots {
+  position: relative !important;
+}
+
+.slide-custom .slick-dots {
+  display: none !important;
+}
+
+.slick-slide > div {
+  height: 100%;
+  display: flex;
+}
+
+.slick-list {
+  display: flex !important;
+}
+
+/* CAROUSEL */
+.carousel-custom .slick-slide {
+  padding: 0 12px; /* ปรับเป็นค่าที่ต้องการ */
+}
+
+/* ปรับ margin ของ container (.slick-list) ให้ slide อยู่ชิดขอบ */
+.carousel-custom .slick-list {
+  margin: 0 -12px; /* ค่านี้ควรตรงกับ padding ที่เพิ่มใน .slick-slide */
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--left {
+  right: 0 !important;
+}
+.react-multi-carousel-list .react-multiple-carousel__arrow--left {
+  width: 40px !important;
+  height: 40px !important;
+  left: calc(1% - 50px) !important;
+  background: #8cc640 !important;
+}

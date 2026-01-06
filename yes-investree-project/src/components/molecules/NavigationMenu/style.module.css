@@ -1,0 +1,17 @@
+@tailwind components;
+
+@layer components {
+  .menu_drawer {
+    .drawer_container {
+      @apply w-full flex-shrink-0;
+
+      .drawer_list {
+        &_item {
+          &.secondary_menu {
+            @apply text-body5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "home": {
+    "header": {
+      "title1": "Crowdfunding",
+      "title2": "Made Simple",
+      "title3": "ส่งเสริมความยั่งยืน",
+      "button1": "Funding",
+      "button2": "Investing"
+    },
+    "promoCarouselSection": {
+      "title1": "Everyone can grow with",
+      "title2": "Crowdfunding",
+      "subTitle": "Our platform connects Thai SMEs seeking capital with investors looking for investment opportunities.  Our platform makes it easy for everyone to participate in the growth of a sustainable economy.",
+      "warning": "Information and images are for example purposes only.",
+      "cert": {
+        "text": "Investree (Thailand) is a Securities and Exchange Commission of",
+        "link1": "Thailand-approved crowdfunding platform.",
+        "link2": ""
+      },
+      "card1": {
+        "title": "SME",
+        "description": "Access financing without traditional SME loan barriers through our crowdfunding platform."
+      },
+      "card2": {
+        "title": "Crowdfunding Platform",
+        "description": "Establish fair risk-based pricing for SME and investor through rigorous due diligence process, creditworthiness assessment and credit score assignment."
+      },
+      "card3": {
+        "title": "Investor",
+        "description": "Explore diverse crowdfunding investment opportunities from Thai SME on our secure platform."
+      }
+    },
+    "successSection": {
+      "title": "Success",
+      "subTitle": "Through Collaboration Between SME and Investors via\n\n",
+      "subTitle2": "Investree (Thailand) Crowdfunding Platform",
+      "card1": {
+        "title": "Funded Amount",
+        "unit": "(Billion)"
+      },
+      "card2": {
+        "title": "Amount of Repayment",
+        "unit": "(Billion)"
+      },
+      "card3": {
+        "title": "Average Funding Period",
+        "unit": "(Days)"
+      },
+      "card4": {
+        "title": "Average Yield",
+        "unit": "(Per Year)*"
+      },
+      "ps": "*The displayed return rate is an average calculated from all crowdfunding debentures offered on the platform. Past performance does not guarantee future results. Actual returns may vary depending on the specific crowdfunding debentures invested in. Crowdfunding debenture investments carry a high level of risk; investors should carefully review all relevant information before making investment decisions.",
+      "warning": {
+        "title": "Note:",
+        "message": "The Securities and Exchange Commission of Thailand has neither reviewed, certified, nor approved this factsheet."
+      }
+    },
+    "benefitSection": {
+      "title": "Why Crowdfunding?",
+      "card1": {
+        "title": "SME",
+        "subTitle": "A Transparent Funding Alternative",
+        "content": [
+          "No Collateral Required.",
+          "Fast, Simple, and Transparent Process.",
+          "Interest Rates Based on Risk Profile.",
+          "Sustainable Funding Source. "
+        ],
+        "button": "Get Funding"
+      },
+      "card2": {
+        "title": "Investor",
+        "subTitle": "An Alternative Investment in New Assets",
+        "content": [
+          "Support Economic Growth and Social Impact (ESG)",
+          "Diversify Your Portfolio with New Asset Classes.",
+          "Easy Online Investment Tracking.",
+          "Returns Potential Inline with Risk Level."
+        ],
+        "button": "Explore Opportunities"
+      }
+    },
+    "detailSection": {
+      "title": "Our Management",
+      "subTitle1": "Our team of ",
+      "subTitle2": "financial professionals ",
+      "subTitle3": "and industry experts creates a seamless and supportive experience for SMEs and investors.",
+      "button": "Meet our management"
+    },
+    "dynamicBrandSection": {
+      "title": "Partner with us to unlock new funding opportunities for your Supply Chain Ecosystem.",
+      "subTitle1": "We can help your Suppliers and Vendors access new funding sources",
+      "subTitle2": "and support the sustainable growth of your Ecosystem.",
+      "partner": {
+        "text": "Join us in building a sustainable economy",
+        "button": "Partner with Us"
+      }
+    },
+    "articleSection": {
+      "title": "News and Insights",
+      "subTitle1": "Stay updated on Investree (Thailand) news and",
+      "subTitle2": "learn about crowdfunding in Thailand.",
+      "button": "View All"
+    },
+    "seo": {
+      "title": "Investree (Thailand) - Crowdfunding Made Simple",
+      "description": "Investree (Thailand) is a Securities and Exchange Commission of Thailand-approved crowdfunding platform. Our platform connects Thai SMEs seeking capital with investors looking for investment opportunities. Our platform makes it easy for everyone to participate in the growth of a sustainable economy."
+    }
+  },
+  "acceptCookieBottomBar": {
+    "description": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. You can see more details about our use of cookies in our",
+    "cookiePolicy": "Cookie Policy",
+    "and": "and",
+    "dataPrivacyPolicy": "Privacy Policy",
+    "acknowledge": "Accept",
+    "decline": "Decline",
+    "learnMoreLink": "https://www.cookiesandyou.com/"
+  },
+  "menu": {
+    "funding": "Funding",
+    "investing": "Investing",
+    "about": "About Us",
+    "news": "News",
+    "faq": "FAQ"
+  },
+  "footer": {
+    "description": "Investree (Thailand) is a Securities and Exchange Commission of Thailand-approved crowdfunding platform.",
+    "copyright": "© 2025 Investree (Thailand) Company Limited. All rights reserved.",
+    "menu": {
+      "services": "Services",
+      "funding": "Funding",
+      "investing": "Investing",
+      "about": "About Us",
+      "management": "Management",
+      "partnership": "Partnership",
+      "career": "Careers",
+      "news": "News",
+      "faq": "FAQ",
+      "contact": "Contact Us",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "privacyPolicy": "Privacy Policy",
+      "social": "Social Media"
+    }
+  }
+}

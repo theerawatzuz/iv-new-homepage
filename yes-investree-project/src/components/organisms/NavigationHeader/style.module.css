@@ -1,0 +1,35 @@
+@tailwind components;
+
+@layer components {
+  .navigation-container {
+    @apply sticky top-0 z-50 bg-white;
+
+    /* apply max height to prevent overflow CLS issue on mobile */
+    @apply max-h-16 max-w-[100vw];
+
+    @screen desktop {
+      /* reset max height */
+      @apply relative bg-white;
+
+      /* reset max height */
+      @apply max-h-[initial] max-w-[initial];
+    }
+
+    & > div:first-child {
+      @apply flex w-full content-between px-6;
+
+      @screen desktop {
+        @apply px-0 py-2;
+      }
+
+      & > div:first-child {
+        @apply desktop:mx-auto desktop:max-w-[1128px];
+
+        /* apply on only mobile first render (having only logo) to prevent CLS issue */
+        &:only-child {
+          @apply my-1 ml-11 desktop:my-[initial] desktop:ml-auto;
+        }
+      }
+    }
+  }
+}

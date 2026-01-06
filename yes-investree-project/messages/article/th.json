@@ -1,0 +1,37 @@
+{
+  "articles": {
+    "type": {
+      "news": "ข่าวสาร",
+      "article": "บทความ"
+    },
+    "headerSection": {
+      "title": "ข่าวสารและบทความ",
+      "subTitle": "ที่เป็นประโยชน์สำหรับ SME และนักลงทุน"
+    },
+    "highlight": {
+      "title": {
+        "news": "ข่าวล่าสุด",
+        "article": "Highlight"
+      }
+    },
+    "all": {
+      "title": {
+        "news": "ข่าวทั้งหมด",
+        "article": "บทความทั้งหมด"
+      },
+      "all": "ทั้งหมด",
+      "seeMore": "ดูเพิ่มเติม",
+      "seeAll": "ดูทั้งหมด"
+    },
+    "related": {
+      "title": "แนะนำบทความ",
+      "button": "ดูทั้งหมด"
+    },
+    "article": {
+      "title": "ข่าวสารและการอัปเดต",
+      "subTitle": "บทความที่น่าสนใจ",
+      "share": "แชร์บทความ"
+    },
+    "author": "ผู้เขียน :"
+  }
+}

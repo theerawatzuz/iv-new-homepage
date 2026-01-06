@@ -1,0 +1,21 @@
+@tailwind utilities;
+
+@layer utilities {
+  .logo-container {
+    &.logo-header {
+      @apply relative mr-auto h-8 max-h-[32px] w-full max-w-[84px] self-center;
+      &.with-70y {
+        @apply max-w-[124px];
+      }
+
+      @screen desktop {
+      }
+    }
+    &.logo-footer {
+      @apply relative mr-auto inline-block h-12 max-h-[48px] w-full self-center;
+
+      @screen desktop {
+      }
+    }
+  }
+}

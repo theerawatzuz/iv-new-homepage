@@ -1,0 +1,12 @@
+.arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}

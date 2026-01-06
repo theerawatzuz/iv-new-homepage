@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "steoates.autoimport",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "dsznajder.es7-react-js-snippets",
+    "wix.vscode-import-cost",
+    "prisma.prisma",
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs",
+    "redhat.vscode-yaml",
+    "github.vscode-pull-request-github",
+    "gruntfuggly.todo-tree",
+    "hediet.vscode-drawio",
+    "matt-meyers.vscode-dbml",
+    "ms-vsliveshare.vsliveshare",
+    "tyriar.sort-lines",
+    "SonarSource.sonarlint-vscode"
+  ]
+}
