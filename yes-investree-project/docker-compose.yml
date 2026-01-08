@@ -1,21 +1,26 @@
+version: "3.8"
+
 services:
   frontend:
     build:
       context: .
       dockerfile: Dockerfile
-      network: host
     container_name: investree_frontend
     restart: unless-stopped
+    env_file: .env
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_STRAPI_API_END_POINT=http://develop_investree_backend_cms_strapi:1337
       - NEXT_PUBLIC_MY_ENDPOINT=http://localhost:3000
       - NEXT_PUBLIC_REVALIDATE_SSG_SHORT_SECONDS=60
       - NEXT_PUBLIC_REVALIDATE_SSG_MEDIUM_SECONDS=300
+      - STRAPI_API_TOKEN=faa4d2fd4f3268a6acbb65a77004d829a8fd43eddae1a8f834ea7d68ad3503cd3c8d7587d3868e108bea9e7ec30bd727ff4ad4cd5518734d3a8854139fde921390d3afce8b98dfdf988a6d8eb17d947456c542e16f6ebb3200ab37de692380f5c4373026a4fba1529e59e7c59e191405ff7a3ee829490820489b84658fc2fec6
     ports:
       - "3000:3000"
     networks:
       - develop_network
+    external_links:
+      - develop_investree_backend_cms_strapi:backend
 
 networks:
   develop_network:

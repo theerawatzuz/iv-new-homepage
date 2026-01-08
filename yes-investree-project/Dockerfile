@@ -10,15 +10,15 @@ RUN npm config set legacy-peer-deps true
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
+# Install dependencies with all required i18n packages
 RUN npm install --no-audit --no-fund --legacy-peer-deps && \
-    npm install react-i18next@14.1.2 --legacy-peer-deps
+    npm install react-i18next i18next next-i18next --legacy-peer-deps
 
 # Copy source
 COPY . .
 
-# Build
-RUN npm run build
+# Skip build for now - will build at runtime when Strapi is ready
+# RUN npm run build
 
 # Production stage
 FROM node:20-alpine3.19
@@ -27,12 +27,8 @@ RUN apk add --no-cache dumb-init
 
 WORKDIR /app
 
-# Copy everything from build stage
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/next.config.* ./
+# Copy package files and source (not built yet)
+COPY --from=builder /app ./
 
 # Create minimal i18n fallback
 RUN mkdir -p ./public/locales/en && \
@@ -52,4 +48,5 @@ ENV PORT=3000
 ENV NEXT_TELEMETRY_DISABLED=1
 
 ENTRYPOINT ["dumb-init", "--"]
-CMD ["npm", "start"]
+# Build and start when container runs (when Strapi is ready)
+CMD ["sh", "-c", "npm run build && npm start"]
