@@ -4,7 +4,7 @@ services:
   # Database
   db:
     image: mysql:5.7
-    container_name: investree_mysql
+    container_name: develop_investree_mysql
     platform: linux/amd64
     restart: unless-stopped
     environment:
@@ -18,10 +18,7 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - develop_network
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      timeout: 20s
-      retries: 10
+
 
 volumes:
   mysql_data:

@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_STRAPI_API_END_POINT=http://investree_backend:1337
+      - NEXT_PUBLIC_STRAPI_API_END_POINT=http://develop_investree_backend_cms_strapi:1337
       - NEXT_PUBLIC_MY_ENDPOINT=http://localhost:3000
       - NEXT_PUBLIC_REVALIDATE_SSG_SHORT_SECONDS=60
       - NEXT_PUBLIC_REVALIDATE_SSG_MEDIUM_SECONDS=300

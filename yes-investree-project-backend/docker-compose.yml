@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: investree_backend
+    container_name: develop_investree_backend_cms_strapi
     restart: unless-stopped
     env_file: .env
     environment:
@@ -23,7 +23,7 @@ services:
     networks:
       - develop_network
     external_links:
-      - investree_mysql:db
+      - develop_investree_mysql:db
 
 volumes:
   strapi_uploads:
